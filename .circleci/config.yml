@@ -16,8 +16,8 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys:
-        fingerprints:
-        - 1a:d3:0a:7b:dd:af:43:a8:55:12:33:27:0c:96:d3:ab	
+          fingerprints:
+          - 1a:d3:0a:7b:dd:af:43:a8:55:12:33:27:0c:96:d3:ab	
       - run:
           name: pull superset repo
           command: |
