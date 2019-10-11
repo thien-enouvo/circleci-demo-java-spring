@@ -22,7 +22,7 @@ jobs:
           name: pull superset repo
           command: |
             echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhyPb24RMM73mH15t0mv1bSnq/keW0UUUcIQr6U31g51MW1TSm8Tsas7pr0AZkx7xAM4x8sBJSsq+B4c0gqRZ72+ezXFSr7kgC9g4x0t0zcsniNlm8ri76O6+31Qh6Lo3RzpOppOsCdvLiupnX6QRWVl4u10Wbrh5DQ8X+knKr81Xt2oXdqb9PtuuhXbh3YdNOQ+kRJjuQeud7YF8kSpmfgugITyl5ty+tfPQuxovOEVOVJsaE3Z+qMkp2ikZY75j52vd5GIZw+uAzg1EtItyc5OibzPI2WO+gayEFB6tGFJDQlE18zykSkhJfLabYtxX+Cb1DieAckDXn3axeY+l7 your_email@example.com' >> ~/.ssh/known_hosts
-            git clone git@github.com:thien-enouvo/test.git --branch master --quiet --single-branch /thiennt
+            git clone git@github.com:thien-enouvo/test.git --branch master --quiet --single-branch .
       - restore_cache:
           key: v1-gradle-wrapper-{{ checksum "gradle/wrapper/gradle-wrapper.properties" }}
       - restore_cache:
